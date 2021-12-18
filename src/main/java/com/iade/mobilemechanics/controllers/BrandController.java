@@ -3,6 +3,7 @@ package com.iade.mobilemechanics.controllers;
 import com.iade.mobilemechanics.models.Brand;
 import com.iade.mobilemechanics.models.exceptions.AlreadyExistsException;
 import com.iade.mobilemechanics.models.exceptions.NotFoundException;
+import com.iade.mobilemechanics.models.exceptions.Response;
 import com.iade.mobilemechanics.models.repositories.BrandRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -58,4 +59,5 @@ public class BrandController {
             return "Deleted";
         }
     }
+
 }

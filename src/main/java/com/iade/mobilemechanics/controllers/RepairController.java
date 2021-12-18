@@ -88,4 +88,18 @@ public class RepairController {
     public Iterable<Repair> getRepairByCarId(@PathVariable int id){
         return repairRepository.findByRepairCarId(id);
     }
+
+   /* @PutMapping(path = "/{id}/registrations/", …)
+    public Response gradeStudent(@PathVariable int id,
+                                 @RequestBody RegistrationGradeView gradeData) {
+        logger.info("Grading student with " + id +
+                " with grade "+gradeData.getGrade());
+// Not verifying if it exists (error if does not exist)
+        Integer updated = studentRepository.gradeStudent(
+                gradeData.getRegId(),gradeData.getGrade(),
+                LocalDate.now());
+        return new Response(updated+
+                " grade updated for student with id "+id,gradeData);
+    }*/
+
 }
